@@ -2,8 +2,11 @@ body {
     margin: 0;
     height: 100vh;
     font-family: 'Allura', cursive;
-    font-size: 150px;
-    background: url("images/plants.png") repeat center center fixed;
+    background: #E3F0DB;
+}
+
+* {
+    margin: 0;
 }
 
 section {
@@ -13,4 +16,51 @@ section {
     align-items: center;
     justify-content: center;
     line-height: 1;
+}
+
+/* iPhone - portrait and landscape */
+@media only screen
+  /* and (min-device-width: 375)  */
+  and (max-device-width: 666px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background: #E3F0DB url("images/plants.png") no-repeat center fixed;
+        background-size: 100%;
+    }
+    section div {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+/* iPad - portrait and landscape */
+@media only screen
+  and (min-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    body {
+        background: #E3F0DB url("images/plants.png") no-repeat center fixed;
+        background-size: 100%;
+    }
+    section div {
+        font-size: 5rem;
+    }
+    p {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen
+  and (min-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    body {
+        background: #E3F0DB url("images/plants.png") no-repeat center fixed;
+    }
+    section div {
+        font-size: 7rem;
+    }
+    p {
+        font-size: 3rem;
+    }
 }
